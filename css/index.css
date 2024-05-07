@@ -9,9 +9,12 @@ body{
     width: 100vw;
     /* overflow-x: hidden; */
     background-color: rgba(0, 128, 0, 0.288);
-    /* display: grid;
-    grid-template-columns: repeat(1, 100%); */
     height: 5000px;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
 }
 
 ul{
@@ -36,6 +39,7 @@ button{
     height: 45px;
     display: flex;
     justify-content: center;
+    z-index: 5;
 }
 
 .category-unb>div{
@@ -70,11 +74,12 @@ button{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 80px;
+    padding: 0 58px 0 45px;
     width: 100vw;
     height: 80px;
     position: fixed;
     transform: translate(0, 45px);
+    z-index: 5;
 }
 
 .category-gnb ul{
@@ -82,7 +87,7 @@ button{
 }
 
 .logo{
-
+    padding: 22px 20px 12px;
 }
 
 #logo-svg g{
@@ -90,11 +95,11 @@ button{
 }
 
 .logo-fill {
-    fill: red; /* 빨간색 */
+    fill: red; 
 }
 
 .logo-line {
-    fill: white; /* 흰색 */
+    fill: white; 
 }
 
 .gnb{
@@ -119,10 +124,11 @@ button{
     font-family: "Noto Sans KR", sans-serif;
     font-weight: 600;
     font-size: 17px;
+    white-space: nowrap;
 }
 
 .gnb li:nth-child(7){
-    padding-top: 14px;
+    padding-top: 10px;
 }
 
 .nlive-svg{
@@ -137,4 +143,174 @@ button{
 .gnb-sub li a i{
     padding: 27px 15px 23px;
     font-size: 20px;
+}
+
+/**************************** jumbotron ****************************/
+.jumbotron{
+    width: 100vw;
+    height: 900px;
+}
+
+swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-slide1{
+    background-image: url("https://image.nongshim.com/non/main/1713139245787.png");
+}
+
+.main-slide2{
+    background-image: url("https://image.nongshim.com/non/main/1621294613930.jpg");
+}
+
+.main-slide3{
+    background-image: url("https://image.nongshim.com/non/main/1621294637450.jpg");
+}
+
+.main-slide4{
+    background-image: url("https://image.nongshim.com/non/main/1648698440223.png");
+}
+
+.swiper-pagination-bullet {
+    background-color: white !important;
+    margin: 0 12px !important
+}
+
+
+/**************************** btn quick ****************************/
+.btn-quick{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    z-index: 2;
+    right: 50%;
+    margin-top: -25px;
+    margin-right: -25px;
+    background-color: #96c120;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-quick a i{
+    color: white;
+}
+
+/**************************** news ****************************/
+.main-news{
+    padding-top: 105px;
+    background-color: white;
+}
+
+.main-news h2{
+    font-size: 62px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: -6px;
+}
+
+.news-swiper{
+    margin-top: 40px;
+    padding-bottom: 30px;
+    height: 592px;
+    width: 8000px;
+}
+
+.news-slide{
+    width: 458px;
+    height: 302px;
+    padding: 60px 39px 80px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.news-slide1, .news-slide2{
+    width: 458px;
+    height: 302px;
+    padding: 60px 39px 80px;
+    box-shadow: 4px 10px 20px rgba(0, 0, 0, 0.15);
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 260px 40px;
+    margin-bottom: 260px;
+}
+
+.news-slide2{
+    margin: -30px 0 0 0;
+}
+
+.news-slide3{
+    
+}
+
+.notice-mark{
+    width: 84px;
+    background-color: #539a00;
+    color: white;
+    font-weight: 600;
+    border-radius: 15px;
+    font-size: 14px;
+    padding: 6px 14px;
+    text-align: center;
+}
+
+.news-slide1 a, .news-slide2 a{
+    margin: 30px 0 25px 4px;
+    text-align: left;
+    font-size: 22px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 400;
+}
+
+.notice-date{
+    text-align: left;
+    font-size: 14px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 400;
+    color: #999;
+}
+
+.news-slide3{
+    background-image: url("https://image.nongshim.com/non/press/baehongdon_cut.jpg");
+}
+.news-slide4{
+    background-image: url("https://image.nongshim.com/non/press/the_black_model.jpg");
+}
+.news-slide5{
+    background-image: url("https://image.nongshim.com/non/press/NS_KFILM.jpg");
+}
+.news-slide6{
+    background-image: url("https://image.nongshim.com/non/press/nongshim_monde_selection.jpg");
+}
+.news-slide7{
+    background-image: url("https://image.nongshim.com/non/press/1713483651662.jpg");
+}
+.news-slide8{
+    background-image: url("https://image.nongshim.com/non/press/1712886167453.jpg");
+}
+.news-slide9{
+    background-image: url("https://image.nongshim.com/non/press/model.jpg");
+}
+.news-slide10{
+    background-image: url("https://image.nongshim.com/non/press/gourmet_poteto.jpg");
 }
