@@ -39,7 +39,7 @@ button{
     height: 45px;
     display: flex;
     justify-content: center;
-    z-index: 5;
+    z-index: 10;
 }
 
 .category-unb>div{
@@ -79,7 +79,7 @@ button{
     height: 80px;
     position: fixed;
     transform: translate(0, 45px);
-    z-index: 5;
+    z-index: 10;
 }
 
 .category-gnb ul{
@@ -163,7 +163,6 @@ swiper-slide {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    
 }
 
 swiper-slide img {
@@ -234,6 +233,12 @@ swiper-slide img {
     width: 8000px;
 }
 
+.news-slide-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .news-slide{
     width: 458px;
     height: 302px;
@@ -241,33 +246,25 @@ swiper-slide img {
     background-size: cover;
 }
 
-.news-slide-container{
-    display: flex;
-    flex-direction: column;
-}
-
-.news-slide1, .news-slide2{
-    width: 458px;
-    height: 302px;
-    padding: 60px 39px 80px;
-    box-shadow: 4px 10px 20px rgba(0, 0, 0, 0.15);
-    background-color: #f6f6f6;
-    display: flex;
-    flex-direction: column;
-    margin: 0 0 260px 40px;
-    margin-bottom: 260px;
-}
-
 .news-info{
-
+    width: 458px;
+    height: 160px;
+    padding: 23px 39px 34px;
 }
 
-.news-slide2{
-    margin: -30px 0 0 0;
+.news-info>div>a{
+    font-size: 22px;
+    font-family: "Noto Sans KR", sans-serif;
 }
 
-.news-slide3{
-    
+.notice-date{
+    text-align: left;
+    font-size: 14px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 400;
+    color: #999;
+    display: inline-block;
+    margin: 11px 0 0;
 }
 
 .notice-mark{
@@ -282,42 +279,169 @@ swiper-slide img {
 }
 
 .news-slide1 a, .news-slide2 a{
-    margin: 30px 0 25px 4px;
+    margin: 30px 0 14px 4px;
     text-align: left;
     font-size: 22px;
     font-family: "Noto Sans KR", sans-serif;
     font-weight: 400;
 }
 
-.notice-date{
-    text-align: left;
-    font-size: 14px;
-    font-family: "Noto Sans KR", sans-serif;
-    font-weight: 400;
-    color: #999;
+.news-slide1, .news-slide2{
+    box-shadow: 4px 10px 20px rgba(0, 0, 0, 0.15);
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 260px;
+}
+
+.news-slide2{
+    margin: -30px 0 0 0;
 }
 
 .news-slide3{
     background-image: url("https://image.nongshim.com/non/press/baehongdon_cut.jpg");
+    margin: -50px 0 0 0;
 }
 .news-slide4{
     background-image: url("https://image.nongshim.com/non/press/the_black_model.jpg");
+    margin: 170px 0 0 0;
 }
 .news-slide5{
     background-image: url("https://image.nongshim.com/non/press/NS_KFILM.jpg");
+    margin: -147px 0 0 0;
 }
 .news-slide6{
     background-image: url("https://image.nongshim.com/non/press/nongshim_monde_selection.jpg");
+    margin: 30px 0 0 0;
 }
 .news-slide7{
     background-image: url("https://image.nongshim.com/non/press/1713483651662.jpg");
+    margin: -100px 0 0 0;
 }
 .news-slide8{
     background-image: url("https://image.nongshim.com/non/press/1712886167453.jpg");
+    margin: 100px 0 0 0;
 }
 .news-slide9{
     background-image: url("https://image.nongshim.com/non/press/model.jpg");
+    margin: -147px 0 0 0;
 }
 .news-slide10{
     background-image: url("https://image.nongshim.com/non/press/gourmet_poteto.jpg");
+    margin: 10px 0 0 0;
+}
+
+.main-btn-wrap{
+    display: flex;
+    justify-content: center;
+}
+
+.main-btn{
+    width: 270px;
+    height: 60px;
+    padding: 18px 32px;
+    border-radius: 30px;
+    font-size: 17px;
+    background-color: transparent;
+    border: 1px solid #ca0202;
+    color: #ca0202;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 600;
+}
+
+.main-btn:hover{
+    color: white;
+    background-color: #ca0202;
+}
+
+/**************************** intro ****************************/
+.main-intro{
+    padding: 150px 0 80px 0;
+    width: 100vw;
+    height: 1627px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-intro h2{
+    font-size: 62px;
+    z-index: 2;
+    text-align: center;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 700;
+}
+.intro-img{
+    width: 1604px;
+    height: 890px;
+    margin-top: -40px;
+    background-image: url("https://www.nongshim.com/resources2/images/main/main_intro.png");
+}
+
+.intro-list{
+    background-color: #ffffff80;
+    width: 1300px;
+    height: 326px;
+    padding: 90px 28px 50px 28px;
+    margin-top: -120px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.intro-item{
+    width: 414px;
+    padding: 30px 22px 0;
+    position: relative;
+    text-align: center;
+}
+
+.intro-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 2px;
+    background-color: #d70000;
+    transform: translateX(5%);
+}
+
+.intro-item h3, .intro-item p{
+    font-size: 22px;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+.intro-item p{
+    font-size: 21.5px;
+    font-weight: 500px;
+    margin-top: 18px;
+}
+
+
+/**************************** story ****************************/
+.main-story{
+    height: 1081px;
+    width: 100vw;
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 0 80px;
+}
+
+.main-story h2{
+    font-size: 62px;
+    text-align: center;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 700;
 }
