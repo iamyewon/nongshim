@@ -1,4 +1,6 @@
-const swiper = document.querySelector('swiper-container')
+// const swiper = document.querySelector('swiper-container')
+const swiper = document.querySelector('.jumbotron-swiper')
+
     
 const params = {
   injectStyles: [`

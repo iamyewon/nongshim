@@ -89,7 +89,7 @@
         <main class="view-container">
             <section>
                 <div class="jumbotron"> 
-                    <swiper-container class="mySwiper" space-between="30" pagination="true" pagination-clickable="true" 
+                    <swiper-container class="mySwiper jumbotron-swiper" space-between="30" pagination="true" pagination-clickable="true" 
                     auto-play="true" autoplay-delay="4500" autoplay-disable-on-interaction="false"
                     centeredSlides="true">
                         <swiper-slide class="main-slide1"></swiper-slide>
@@ -107,8 +107,9 @@
                 <article class="main-news">
                     <h2>내일을 위한 새롭고 활기찬 농심 소식</h2>
                     <div>
-                        <!-- 줄일 때 위치 고정되어있음 -->
-                        <swiper-container class="mySwiper news-swiper" loop="true" slides-per-view="15" spaceBetween: 30>
+                        <!-- slides-per-view="auto" 로 해야 원하는대로 슬라이드가 가운데 옴 -->
+                        <swiper-container class="mySwiper news-swiper" loop="true" slides-per-view="15" 
+                        spaceBetween="30" initialSlide="10" centeredSlides="true" slideToClickedSlide="true" >
                             <swiper-slide>
                                 <div class="news-slide-container">
                                     <div class="news-slide10 news-slide"></div>
@@ -313,27 +314,53 @@
                 <article class="main-story">
                     <h2>N.LIVE로 즐기는 농심 이야기</h2>
                     <div class="story-view">
-                        .
+                        
                     </div>
                 </article>
                 <article class="main-management">
                     <h2>함께해서 더 아름다운 세상, <br/> 농심이 만들어갑니다</h2>
-                    <div>
-                        <div>
-                            <div>사회공헌</div>
-                            <div>작은 사랑의 실천을 통해 <br/> 함께 사는 세상, <br/> 행복한 내일을 만들고자 합니다.</div>
+                    <div class="management-view">
+                        <div class="management-img"></div>
+                        <div class="management-list">
+                            <div class="management-item">
+                                <div class="subject">사회공헌</div>
+                                <div class="management-info">작은 사랑의 실천을 통해 <br/> 함께 사는 세상, <br/> 행복한 내일을 만들고자 합니다.</div>
+                            </div>
+                            <div class="management-item">
+                                <div class="subject">환경•안전</div>
+                                <div class="management-info">안전한 제조공정, 식품의 생산을 통해 <br/> 고객의 건강과 행복을 </br> 최우선으로 생각합니다. </div>
+                            </div>
+                            <div class="management-item">
+                                <div class="subject">소비자<br/> 중심경영</div>
+                                <div class="management-info">소비자 중심으로 구성하고, <br/> 관련 경영활동을 지속적으로 <br/> 개선합니다.</div>
+                            </div>
                         </div>
-                        <div>
-                            <div>환경•안전</div>
-                            <div>작은 사랑의 실천을 통해 <br/> 함께 사는 세상, <br/> 행복한 내일을 만들고자 합니다.</div>
+                    </div>
+                    <div class="main-btn-wrap">
+                        <button class="main-btn">지속가능경영</button>
+                    </div>
+                </article>
+                <article class="main-brand">
+                    <h2>모두의 일상에 즐거움을 선사합니다</h2>
+                    <div class="brand-view">
+                        <div class="brand-img">
+                            <div>
+                                <h3>BEST BRAND</h3>
+                            </div>
                         </div>
-                        <div>
-                            <div>소비자<br/> 중심경영</div>
-                            <div>소비자 중심으로 구성하고, <br/> 관련 경영활동을 지속적으로 <br/> 개선합니다.</div>
+                        <div class="brans">
+                            <div class="brand-list">
+                                <div class="brand-item">
+                                    <div>INSTANT NOODLES</div>
+                                    <div></div>
+                                </div>
+                                <div class="brand-item"></div>
+                                <div class="brand-item"></div>
+                                <div class="brand-item"></div>
+                            </div>
                         </div>
                     </div>
                 </article>
-                <article class="main-brand"></article>
                 <article class="main-map"></article>
                 <article class="main-etc"></article>
             </section>
