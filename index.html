@@ -10,15 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://kit.fontawesome.com/ed38d12b2f.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js" defer></script>
-
-    <style>
-        .swiper-pagination-bullet {
-            background-color: white !important;
-            margin: 0 12px !important;
-        }
-        </style>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body>
     <div class="container">
@@ -88,17 +82,18 @@
 
         <main class="view-container">
             <section>
-                <div class="jumbotron"> 
-                    <swiper-container class="mySwiper jumbotron-swiper" space-between="30" pagination="true" pagination-clickable="true" 
-                    auto-play="true" autoplay-delay="4500" autoplay-disable-on-interaction="false"
-                    centeredSlides="true">
-                        <swiper-slide class="main-slide1"></swiper-slide>
-                        <swiper-slide class="main-slide2"></swiper-slide>
-                        <swiper-slide class="main-slide3"></swiper-slide>
-                        <swiper-slide class="main-slide4"></swiper-slide>
-                    </swiper-container>
-                    <div class="swiper-pagination"></div>
+                <div class="jumbotron">
+                    <div class="swiper mySwiper jumbotron-swiper">
+                        <div class="swiper-wrapper">
+                        <div class="swiper-slide main-slide1"></div>
+                        <div class="swiper-slide main-slide2"></div>
+                        <div class="swiper-slide main-slide3"></div>
+                        <div class="swiper-slide main-slide4"></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
                 </div>
+
                 <div class="btn-quick">
                     <a href="">
                         <i class="fa-solid fa-chevron-down"></i>
@@ -108,181 +103,182 @@
                     <h2>내일을 위한 새롭고 활기찬 농심 소식</h2>
                     <div>
                         <!-- slides-per-view="auto" 로 해야 원하는대로 슬라이드가 가운데 옴 -->
-                        <swiper-container class="mySwiper news-swiper" loop="true" slides-per-view="15" 
-                        spaceBetween="30" initialSlide="10" centeredSlides="true" slideToClickedSlide="true" >
-                            <swiper-slide>
-                                <div class="news-slide-container">
-                                    <div class="news-slide10 news-slide"></div>
-                                    <div class="news-info">
-                                        <div><a href="">농심, '고메포테토 블랙페퍼크랩맛' 출시</a></div>
-                                        <span class="notice-date">2024.04.04</span>
+                        <div class="swiper-container mySwiper news-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="news-slide-container">
+                                        <div class="news-slide10 news-slide"></div>
+                                        <div class="news-info">
+                                            <div><a href="">농심, '고메포테토 블랙페퍼크랩맛' 출시</a></div>
+                                            <span class="notice-date">2024.04.04</span>
+                                        </div>
                                     </div>
                                 </div>
-                            </swiper-slide>
-                            <swiper-slide>
-                                <div class="news-slide1 news-slide">
-                                    <span class="notice-mark">NOTICE</span>
-                                    <a href="">제23회 식품안전의 날</a>
-                                    <span class="notice-date">2024.05.07</span>
-                                </div>
-                            </swiper-slide>
-                            <swiper-slide>
-                                <div class="news-slide2 news-slide">
-                                    <span class="notice-mark">NOTICE</span>
-                                    <a href="">식품 소비의 새로운 기준, 소비기한</a>
-                                    <span class="notice-date">2024.03.06</span>
-                                </div>
-                            </swiper-slide>
-                            <swiper-slide>
-                                <div class="news-slide-container">
-                                    <div class="news-slide3 news-slide"></div>
-                                    <div class="news-info">
-                                        <div><a href="">농심, 매콤 고소한 배홍동큰사발면 출시</a></div>
-                                        <span class="notice-date">2024.04.30</span>
+                                <div class="swiper-slide">
+                                    <div class="news-slide1 news-slide">
+                                        <span class="notice-mark">NOTICE</span>
+                                        <a href="">제23회 식품안전의 날</a>
+                                        <span class="notice-date">2024.05.07</span>
                                     </div>
                                 </div>
-                            </swiper-slide>
-                            <swiper-slide>
-                                <div class="news-slide-container">
-                                    <div class="news-slide4 news-slide"></div>
-                                    <div class="news-info">
-                                        <div><a href="">농심, '짜파게티 더블랙' 광고모델로 배우 손석구 발탁</a></div>
-                                        <span class="notice-date">2024.04.29</span>
+                                <div class="swiper-slide">
+                                    <div class="news-slide2 news-slide">
+                                        <span class="notice-mark">NOTICE</span>
+                                        <a href="">식품 소비의 새로운 기준, 소비기한</a>
+                                        <span class="notice-date">2024.03.06</span>
                                     </div>
                                 </div>
-                            </swiper-slide>
-                            <swiper-slide>
-                                <div class="news-slide-container">
-                                    <div class="news-slide5 news-slide"></div>
-                                    <div class="news-info">
-                                        <div><a href="">농심, 전주국제영화제 업무협약 체결</a></div>
-                                        <span class="notice-date">2024.04.04</span>
+                                <div class="swiper-slide">
+                                    <div class="news-slide-container">
+                                        <div class="news-slide3 news-slide"></div>
+                                        <div class="news-info">
+                                            <div><a href="">농심, 매콤 고소한 배홍동큰사발면 출시</a></div>
+                                            <span class="notice-date">2024.04.30</span>
+                                        </div>
                                     </div>
                                 </div>
-                            </swiper-slide>
-                            <swiper-slide>
-                                <div class="news-slide-container">
-                                    <div class="news-slide6 news-slide"></div>
-                                    <div class="news-info">
-                                        <div><a href="">농심 백산수, 벨기에 '몽드 셀렉션' 2년 연속 대상 수상</a></div>
-                                        <span class="notice-date">2024.04.04</span>
+                                <div class="swiper-slide">
+                                    <div class="news-slide-container">
+                                        <div class="news-slide4 news-slide"></div>
+                                        <div class="news-info">
+                                            <div><a href="">농심, '짜파게티 더블랙' 광고모델로 배우 손석구 발탁</a></div>
+                                            <span class="notice-date">2024.04.29</span>
+                                        </div>
                                     </div>
                                 </div>
-                            </swiper-slide>
-                            <swiper-slide>
-                                <div class="news-slide-container">
-                                    <div class="news-slide7 news-slide"></div>
-                                    <div class="news-info">
-                                        <div><a href="">농심, 백혈병 소아암 환자 위해 임직원 단체헌혈 실시</a></div>
-                                        <span class="notice-date">2024.04.04</span>
+                                <div class="swiper-slide">
+                                    <div class="news-slide-container">
+                                        <div class="news-slide5 news-slide"></div>
+                                        <div class="news-info">
+                                            <div><a href="">농심, 전주국제영화제 업무협약 체결</a></div>
+                                            <span class="notice-date">2024.04.04</span>
+                                        </div>
                                     </div>
                                 </div>
-                            </swiper-slide>
-                            <swiper-slide>
-                                <div class="news-slide-container">
-                                    <div class="news-slide8 news-slide"></div>
-                                    <div class="news-info">
-                                        <div><a href="">농심, 짜파게티 출시 40주년 팝업스토어 운영, 신제품 출시</a></div>
-                                        <span class="notice-date">2024.04.04</span>
+                                <div class="swiper-slide">
+                                    <div class="news-slide-container">
+                                        <div class="news-slide6 news-slide"></div>
+                                        <div class="news-info">
+                                            <div><a href="">농심 백산수, 벨기에 '몽드 셀렉션' 2년 연속 대상 수상</a></div>
+                                            <span class="notice-date">2024.04.04</span>
+                                        </div>
                                     </div>
                                 </div>
-                            </swiper-slide>
-                            <swiper-slide>
-                                <div class="news-slide-container">
-                                    <div class="news-slide9 news-slide"></div>
-                                    <div class="news-info">
-                                        <div><a href="">농심, 백산수 광고모델로 배우 임시완 발탁</a></div>
-                                        <span class="notice-date">2024.04.04</span>
+                                <div class="swiper-slide">
+                                    <div class="news-slide-container">
+                                        <div class="news-slide7 news-slide"></div>
+                                        <div class="news-info">
+                                            <div><a href="">농심, 백혈병 소아암 환자 위해 임직원 단체헌혈 실시</a></div>
+                                            <span class="notice-date">2024.04.04</span>
+                                        </div>
                                     </div>
                                 </div>
-                            </swiper-slide>
-                            <swiper-slide>
-                                <div class="news-slide-container">
-                                    <div class="news-slide10 news-slide"></div>
-                                    <div class="news-info">
-                                        <div><a href="">농심, '고메포테토 블랙페퍼크랩맛' 출시</a></div>
-                                        <span class="notice-date">2024.04.04</span>
+                                <div class="swiper-slide">
+                                    <div class="news-slide-container">
+                                        <div class="news-slide8 news-slide"></div>
+                                        <div class="news-info">
+                                            <div><a href="">농심, 짜파게티 출시 40주년 팝업스토어 운영, 신제품 출시</a></div>
+                                            <span class="notice-date">2024.04.04</span>
+                                        </div>
                                     </div>
                                 </div>
-                            </swiper-slide>
-                            <swiper-slide>
-                                <div class="news-slide1 news-slide">
-                                    <span class="notice-mark">NOTICE</span>
-                                    <a href="">제23회 식품안전의 날</a>
-                                    <span class="notice-date">2024.05.07</span>
-                                </div>
-                            </swiper-slide>
-                            <swiper-slide>
-                                <div class="news-slide2 news-slide">
-                                    <span class="notice-mark">NOTICE</span>
-                                    <a href="">식품 소비의 새로운 기준, 소비기한</a>
-                                    <span class="notice-date">2024.03.06</span>
-                                </div>
-                            </swiper-slide>
-                            <swiper-slide>
-                                <div class="news-slide-container">
-                                    <div class="news-slide3 news-slide"></div>
-                                    <div class="news-info">
-                                        <div><a href="">농심, 매콤 고소한 배홍동큰사발면 출시</a></div>
-                                        <span class="notice-date">2024.04.30</span>
+                                <div class="swiper-slide">
+                                    <div class="news-slide-container">
+                                        <div class="news-slide9 news-slide"></div>
+                                        <div class="news-info">
+                                            <div><a href="">농심, 백산수 광고모델로 배우 임시완 발탁</a></div>
+                                            <span class="notice-date">2024.04.04</span>
+                                        </div>
                                     </div>
                                 </div>
-                            </swiper-slide>
-                            <swiper-slide>
-                                <div class="news-slide-container">
-                                    <div class="news-slide4 news-slide"></div>
-                                    <div class="news-info">
-                                        <div><a href="">농심, '짜파게티 더블랙' 광고모델로 배우 손석구 발탁</a></div>
-                                        <span class="notice-date">2024.04.29</span>
+                                <div class="swiper-slide">
+                                    <div class="news-slide-container">
+                                        <div class="news-slide10 news-slide"></div>
+                                        <div class="news-info">
+                                            <div><a href="">농심, '고메포테토 블랙페퍼크랩맛' 출시</a></div>
+                                            <span class="notice-date">2024.04.04</span>
+                                        </div>
                                     </div>
                                 </div>
-                            </swiper-slide>
-                            <swiper-slide>
-                                <div class="news-slide-container">
-                                    <div class="news-slide5 news-slide"></div>
-                                    <div class="news-info">
-                                        <div><a href="">농심, 전주국제영화제 업무협약 체결</a></div>
-                                        <span class="notice-date">2024.04.04</span>
+                                <div class="swiper-slide">
+                                    <div class="news-slide1 news-slide">
+                                        <span class="notice-mark">NOTICE</span>
+                                        <a href="">제23회 식품안전의 날</a>
+                                        <span class="notice-date">2024.05.07</span>
                                     </div>
                                 </div>
-                            </swiper-slide>
-                            <swiper-slide>
-                                <div class="news-slide-container">
-                                    <div class="news-slide6 news-slide"></div>
-                                    <div class="news-info">
-                                        <div><a href="">농심 백산수, 벨기에 '몽드 셀렉션' 2년 연속 대상 수상</a></div>
-                                        <span class="notice-date">2024.04.04</span>
+                                <div class="swiper-slide">
+                                    <div class="news-slide2 news-slide">
+                                        <span class="notice-mark">NOTICE</span>
+                                        <a href="">식품 소비의 새로운 기준, 소비기한</a>
+                                        <span class="notice-date">2024.03.06</span>
                                     </div>
                                 </div>
-                            </swiper-slide>
-                            <swiper-slide>
-                                <div class="news-slide-container">
-                                    <div class="news-slide7 news-slide"></div>
-                                    <div class="news-info">
-                                        <div><a href="">농심, 백혈병 소아암 환자 위해 임직원 단체헌혈 실시</a></div>
-                                        <span class="notice-date">2024.04.04</span>
+                                <div class="swiper-slide">
+                                    <div class="news-slide-container">
+                                        <div class="news-slide3 news-slide"></div>
+                                        <div class="news-info">
+                                            <div><a href="">농심, 매콤 고소한 배홍동큰사발면 출시</a></div>
+                                            <span class="notice-date">2024.04.30</span>
+                                        </div>
                                     </div>
                                 </div>
-                            </swiper-slide>
-                            <swiper-slide>
-                                <div class="news-slide-container">
-                                    <div class="news-slide8 news-slide"></div>
-                                    <div class="news-info">
-                                        <div><a href="">농심, 짜파게티 출시 40주년 팝업스토어 운영, 신제품 출시</a></div>
-                                        <span class="notice-date">2024.04.04</span>
+                                <div class="swiper-slide">
+                                    <div class="news-slide-container">
+                                        <div class="news-slide4 news-slide"></div>
+                                        <div class="news-info">
+                                            <div><a href="">농심, '짜파게티 더블랙' 광고모델로 배우 손석구 발탁</a></div>
+                                            <span class="notice-date">2024.04.29</span>
+                                        </div>
                                     </div>
                                 </div>
-                            </swiper-slide>
-                            <swiper-slide>
-                                <div class="news-slide-container">
-                                    <div class="news-slide9 news-slide"></div>
-                                    <div class="news-info">
-                                        <div><a href="">농심, 백산수 광고모델로 배우 임시완 발탁</a></div>
-                                        <span class="notice-date">2024.04.04</span>
+                                <div class="swiper-slide">
+                                    <div class="news-slide-container">
+                                        <div class="news-slide5 news-slide"></div>
+                                        <div class="news-info">
+                                            <div><a href="">농심, 전주국제영화제 업무협약 체결</a></div>
+                                            <span class="notice-date">2024.04.04</span>
+                                        </div>
                                     </div>
                                 </div>
-                            </swiper-slide>
-                          </swiper-container>
+                                <div class="swiper-slide">
+                                    <div class="news-slide-container">
+                                        <div class="news-slide6 news-slide"></div>
+                                        <div class="news-info">
+                                            <div><a href="">농심 백산수, 벨기에 '몽드 셀렉션' 2년 연속 대상 수상</a></div>
+                                            <span class="notice-date">2024.04.04</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="news-slide-container">
+                                        <div class="news-slide7 news-slide"></div>
+                                        <div class="news-info">
+                                            <div><a href="">농심, 백혈병 소아암 환자 위해 임직원 단체헌혈 실시</a></div>
+                                            <span class="notice-date">2024.04.04</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="news-slide-container">
+                                        <div class="news-slide8 news-slide"></div>
+                                        <div class="news-info">
+                                            <div><a href="">농심, 짜파게티 출시 40주년 팝업스토어 운영, 신제품 출시</a></div>
+                                            <span class="notice-date">2024.04.04</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="news-slide-container">
+                                        <div class="news-slide9 news-slide"></div>
+                                        <div class="news-info">
+                                            <div><a href="">농심, 백산수 광고모델로 배우 임시완 발탁</a></div>
+                                            <span class="notice-date">2024.04.04</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="main-btn-wrap">
                         <button class="main-btn">농심 소식</button>
@@ -349,19 +345,45 @@
                             </div>
                         </div>
                         <div class="brans">
-                            <div class="brand-list">
-                                <div class="brand-item">
-                                    <div>INSTANT NOODLES</div>
-                                    <div></div>
+                            <div class="brand-container">
+                                <div class="brand-list">
+                                    <div class="brand-item">
+                                        <h4>INSTANT NOODLES</h4>
+                                        <img src="https://www.nongshim.com/resources2/images/main/main_brand_01.png" alt="">
+                                        <p>한국의 맛으로 세계와 <br/> 소통하다</p>
+                                    </div>
+                                    <div class="brand-item">
+                                        <h4>SNACKS</h4>
+                                        <img src="https://www.nongshim.com/resources2/images/main/main_brand_02.png" alt="">
+                                        <p>장수 브랜드의 역사를 <br/> 창조하다</p>
+                                    </div>
+                                    <div class="brand-item"> 
+                                        <h4>BEVERAGES</h4>
+                                        <img src="https://www.nongshim.com/resources2/images/main/main_brand_03.png" alt="">
+                                        <p>프리미엄 생수 <br/> 브랜드의 미래를 열다</p>
+                                    </div>
+                                    <div class="brand-item">
+                                        <h4>IMPORT BRAND</h4>
+                                        <img src="https://www.nongshim.com/resources2/images/main/main_brand_04.png" alt="">
+                                        <p>세계일류의 다양한 <br/> 맛을 즐기다</p>
+                                    </div>
                                 </div>
-                                <div class="brand-item"></div>
-                                <div class="brand-item"></div>
-                                <div class="brand-item"></div>
+                            </div>
+                            <div class="main-btn-wrap">
+                                <button class="main-btn">브랜드관</button>
                             </div>
                         </div>
                     </div>
                 </article>
-                <article class="main-map"></article>
+                <article class="main-map">
+                    <h2>국경을 뛰어넘는 농심의 맛</h2>
+                    <div class="map-container">
+
+                    </div>
+                    <div class="main-btn-wrap">
+                        <button class="main-btn">세계속의 농심</button>
+                    </div>
+                </article>
                 <article class="main-etc"></article>
             </section>
         </main>

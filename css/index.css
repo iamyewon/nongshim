@@ -152,25 +152,18 @@ button{
     height: 900px;
 }
 
-swiper-container {
+.jumbotron-swiper, .swiper-wrapper {
     width: 100%;
     height: 100%;
 }
 
-swiper-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-swiper-slide img {
-    display: block;
+.swiper-slide {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .main-slide1{
@@ -189,10 +182,40 @@ swiper-slide img {
     background-image: url("https://image.nongshim.com/non/main/1648698440223.png");
 }
 
-.swiper-pagination-bullet {
-    background-color: white !important;
-    margin: 0 12px !important
+/* .swiper-pagination{
+    width: 399px;
+    height: 200px;
+    position: absolute;
+    bottom: 280px;
+    z-index: 3;
+} */
+
+
+.swiper-pagination{
+    margin-bottom: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.swiper-pagination-bullet {
+    width: 6px;
+    height: 6px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    opacity: 1;
+    background-color: white !important;
+    margin: 0 20px !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: transparent !important;
+    border: 2px solid white;
+    width: 14px !important;
+    height: 14px !important;
+}
+
 
 
 /**************************** btn quick ****************************/
@@ -263,10 +286,15 @@ main article>h2 {
     /* width: 100vw; 뷰에 1개 슬라이드밖에 안보임 */ 
 }
 
+.swiper-wrapper{
+    height: 100%;
+}
+
 .news-slide-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: 100%;
 }
 
 .news-slide{
@@ -334,7 +362,7 @@ main article>h2 {
 }
 .news-slide4{
     background-image: url("https://image.nongshim.com/non/press/the_black_model.jpg");
-    margin: 170px 0 0 0;
+    margin: 120px 0 0 0;
 }
 .news-slide5{
     background-image: url("https://image.nongshim.com/non/press/NS_KFILM.jpg");
@@ -365,7 +393,7 @@ main article>h2 {
 .main-intro{
     padding: 150px 0 80px 0;
     width: 100%;
-    height: 1627px;
+    /* height: 1627px; */
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -434,7 +462,7 @@ main article>h2 {
 
 /**************************** story ****************************/
 .main-story{
-    height: 1081px;
+    height: 1081px; /* 임시 */
     width: 100%;
     background-color: #f6f6f6;
     display: flex;
@@ -446,7 +474,7 @@ main article>h2 {
 /**************************** management ****************************/
 .main-management{
     width: 100%;
-    height: 1192px;
+    /* height: 1192px; */
     padding-top: 70px;
     background-color: white;
     display: flex;
@@ -533,6 +561,9 @@ main article>h2 {
     margin-top: 36px;
 }
 
+
+/**************************** brand ****************************/
+
 .main-brand{
     background-color: white;
     width: 100%;
@@ -568,4 +599,72 @@ main article>h2 {
     color: white;
     font-size: 96px;
     margin-left: -360px;
+}
+
+.brans{
+    background-color: #f6f6f6;
+    height: 663px;
+    padding: 90px 0 80px 0;
+}
+
+.brand-container{
+    width: 1200px;
+    height: 433px;
+    margin: 0 auto;
+    padding: 0 31px;
+    display: flex;
+    justify-content: center;
+}
+
+.brand-list{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 86px;
+}
+
+.brand-item{
+    text-align: center;
+    position: relative;
+    padding-top: 12px;
+}
+
+.brand-item::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 2px solid #d70000;
+}
+
+.brand-item h4{
+    font-size: 18px;
+}
+
+.brand-item img{
+    background-color: white;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+
+.brand-item p{
+    margin-top: 25px;
+    font-size: 22px;
+    font-family: "Noto Sans KR", sans-serif;
+    color: #777777;
+}
+
+
+/**************************** map ****************************/
+
+.main-map{
+    background-color: white;
+    padding: 70px 0 80px 0;
+}
+.map-container{
+    height: 420px;
+    margin: 110px 0 90px 0;
 }

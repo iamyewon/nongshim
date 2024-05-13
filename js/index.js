@@ -1,45 +1,27 @@
-// const swiper = document.querySelector('swiper-container')
-const swiper = document.querySelector('.jumbotron-swiper')
 
-    
-const params = {
-  injectStyles: [`
-  .swiper-pagination-bullet {
-    width: 6px;
-    height: 6px;
-    text-align: center;
-    line-height: 20px;
-    font-size: 12px;
-    opacity: 1;
-    background: white;
-  }
+const jumbotronSwiper = new Swiper(".jumbotron-swiper", {
+  spaceBetween: 30,
+  centeredSlides: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
 
-  .swiper-pagination-bullet-active {
-    background: transparent;
-    border: 2px solid white;
-    width: 10px;
-    height: 10px;
-  }
 
-  .swiper-pagination{
-    margin-bottom: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+const newsSwiper = new Swiper(".news-swiper", {
+  loop: true,
+  slidesPerView: 15,
+  spaceBetween: 30,
+  initialSlide: 10,
+  centeredSlides: true,
+  slideToClickedSlide: true,
+});
 
-  .swiper-pagination-bullet{
-    margin: 0 20px !important;
-  }
 
-  `],
-}
-
-Object.assign(swiper, params); 
-// swiper에 params 속성 복사 (객체의 속성을 추가하거나 덮어쓰기)
-swiper.initialize();
-
-// slide-prev
-// slide-active
-// slide-next
-
+// loop="true" slides-per-view="15" 
+//spaceBetween="30" initialSlide="10" centeredSlides="true" slideToClickedSlide="true" 
