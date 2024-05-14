@@ -668,3 +668,7 @@ main article>h2 {
     height: 420px;
     margin: 110px 0 90px 0;
 }
+
+.map{
+    background-image: url("https://www.nongshim.com/resources2/images/main/main_map.png");
+}
