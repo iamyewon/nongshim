@@ -57,7 +57,6 @@ button{
 .unb-lists li{
     width: 168px;
     padding: 0 10px;
-    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -81,6 +80,15 @@ button{
     position: fixed;
     transform: translate(0, 45px);
     z-index: 10;
+    transition: background-color 0.3s ease;
+}
+
+.category-gnb:hover{
+    background-color: white;
+}
+
+.category-gnb:hover .gnb li a, .category-gnb:hover .gnb-sub li a i{
+    color: black;
 }
 
 .category-gnb ul{
@@ -104,10 +112,9 @@ button{
 }
 
 .gnb{
-    width: 992px;
     height: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .gnb li{
@@ -145,6 +152,22 @@ button{
     padding: 27px 15px 23px;
     font-size: 20px;
 }
+
+/**************************** gnb dropdown menu ****************************/
+.dropdown-menu{
+    width: 100vw;
+    height: 400px;
+    background-color: white;
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+}
+
+.gnb li:hover  .dropdown-menu{
+    display: block;
+}
+
 
 /**************************** jumbotron ****************************/
 .jumbotron{
@@ -680,6 +703,7 @@ main article>h2 {
 
 .map-nation-list{
     margin-left: 36px;
+    padding-right: 16px;
     display: flex;
     flex-direction: column;
     /* justify-content: space-between; */
@@ -704,13 +728,74 @@ main article>h2 {
 }
 
 .map{
+    width: 100%;
     height: 420px;
     background-image: url("https://www.nongshim.com/resources2/images/main/main_map.png");
     background-repeat: no-repeat;
-    background-position: center;
-    
+    background-position: left;
+    align-items: center;
+    position: relative;
+}
+
+.map-pin{
+    position: absolute;
+    top: 20px;
+}
+
+.pin{
+    width: 30px;
+    height: 38px;
+    background-image: url("https://www.nongshim.com/resources2/images/main/map_pin.png");
+    background-size: 30px 38px;
 }
 
 .map-issue{
     float: right;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 18px;
+}
+
+.map-issue img{
+   margin-bottom: 26px;
+   border-radius: 8px;
+}
+
+.sales{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+/**************************** etc ****************************/
+
+.main-etc{
+    background-color: #555555;
+    width: 100%;
+    height: 290px;
+}
+
+.etc-list{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 430px 1fr;
+}
+
+.stock a{
+    float: right;
+}
+
+.etc-item a{
+    width: 430px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.etc-item a p{
+    color: #ffffff80;
 }

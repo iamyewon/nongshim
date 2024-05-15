@@ -25,3 +25,7 @@ const newsSwiper = new Swiper(".news-swiper", {
 
 // loop="true" slides-per-view="15" 
 //spaceBetween="30" initialSlide="10" centeredSlides="true" slideToClickedSlide="true" 
+
+
+
+
