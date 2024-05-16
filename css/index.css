@@ -9,7 +9,7 @@ body{
     width: 100vw;
     overflow-x: hidden;
     background-color: rgba(0, 128, 0, 0.288);
-    height: 5000px;
+    position: relative;
 }
 
 main{
@@ -31,6 +31,58 @@ a{
 button{
     cursor: pointer;
 }
+
+
+
+.popup{
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 580px;
+    height: 590px;
+    z-index: 12;
+}
+
+.popup-top-wrap{
+    background: white;
+    padding: 8px 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.play-btn-wrap{
+
+}
+
+.popup-img{
+    width: 580px;
+    height: 505px;
+    background-image: url("https://www.nongshim.com/resources2/images/common/img-popup.jpg");
+}
+
+.popup-bottom-wrap{
+    height: 40px;
+    background: black;
+    color: white;
+    padding-right: 16px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popup-bottom-wrap div{
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    font-size: 14px;
+}
+
+.stop-watching-for-today img{
+    padding-right: 8px;
+}
+
 
 /**************************** unb ****************************/
 .category-unb{
