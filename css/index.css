@@ -80,15 +80,7 @@ button{
     position: fixed;
     transform: translate(0, 45px);
     z-index: 10;
-    transition: background-color 0.3s ease;
-}
-
-.category-gnb:hover{
-    background-color: white;
-}
-
-.category-gnb:hover .gnb li a, .category-gnb:hover .gnb-sub li a i{
-    color: black;
+    /* transition: background-color 0.3s ease; */
 }
 
 .category-gnb ul{
@@ -139,6 +131,19 @@ button{
     padding-top: 10px;
 }
 
+.gnb:hover ~ #logo-svg g{
+    fill: black;
+}
+
+.gnb:hover ~ .gnb-sub li a i{
+    color: black;
+}
+
+.gnb:hover li a{
+    color: black;
+}
+
+
 .nlive-svg{
     width: 86px;
     height: 33px;
@@ -156,18 +161,34 @@ button{
 /**************************** gnb dropdown menu ****************************/
 .dropdown-menu{
     width: 100vw;
-    height: 400px;
+    height: 0px;
     background-color: white;
-    display: none;
+    /* display: none; */
     position: absolute;
-    top: 80px;
+    top: 0px;
     left: 0;
+    transition: height 0.3s ease;
+    z-index: -1;
 }
 
-.gnb li:hover  .dropdown-menu{
+.dropdown-menu-container{
+    display: none;
+}
+
+.dropdown-menu-content{
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.gnb li:hover .dropdown-menu{
+    /* display: block; */
+    height: 400px;
+}
+
+.gnb li:hover .dropdown-menu-container{
     display: block;
+    box-shadow: 0px -4px 4px -4px rgba(180, 180, 180, 0.493);
 }
-
 
 /**************************** jumbotron ****************************/
 .jumbotron{
@@ -205,15 +226,6 @@ button{
     background-image: url("https://image.nongshim.com/non/main/1648698440223.png");
 }
 
-/* .swiper-pagination{
-    width: 399px;
-    height: 200px;
-    position: absolute;
-    bottom: 280px;
-    z-index: 3;
-} */
-
-
 .swiper-pagination{
     margin-bottom: 76px;
     display: flex;
@@ -239,6 +251,11 @@ button{
     height: 14px !important;
 }
 
+.swiper-stop{
+    width: 14px;
+    height: 14px;
+    
+}
 
 
 /**************************** btn quick ****************************/
@@ -254,6 +271,7 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .btn-quick a i{
@@ -485,14 +503,17 @@ main article>h2 {
 
 /**************************** story ****************************/
 .main-story{
-    height: 1081px; /* 임시 */
+    /* 임시높이 */
+    height: 1081px; 
     width: 100%;
     background-color: #f6f6f6;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 70px 0 80px;
+    position: relative;
 }
+
 
 /**************************** management ****************************/
 .main-management{
@@ -508,7 +529,6 @@ main article>h2 {
 .main-management h2{
     z-index: 2;
     line-height: 1.35;
-
 }
 
 .management-view{
