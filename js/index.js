@@ -56,6 +56,7 @@ const handleStorage = {
     localStorage.setItem(name, JSON.stringify(item));
   },
 
+  // TODO get으로 있는지 확인하고 있으면 popup hidden
   getStorage(name) {
     let currentDate = new Date();
     currentDate = currentDate.setTime(currentDate.getTime());
@@ -82,5 +83,3 @@ if(handleStorage.getStorage("expiryDate")){
 }else{
   popup.classList.remove('popup-hidden');
 }
-
-// 스토리지 미완
