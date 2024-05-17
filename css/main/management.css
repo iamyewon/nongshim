@@ -1,0 +1,86 @@
+/**************************** management ****************************/
+.main-management{
+    width: 100%;
+    padding-top: 70px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-management h2{
+    z-index: 2;
+    line-height: 1.35;
+}
+
+.management-view{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+}
+
+.management-img{
+    background-image: url("https://www.nongshim.com/resources2/images/main/main_management.png");
+    width: 1600px;
+    height: 900px;
+    margin-top: -40px;
+}
+
+.management-list{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: calc((1600 - 1244)/2)px;
+    width: 1244px;
+    padding-top: 280px;
+    display: flex;
+}
+
+.management-item{
+    width: 33.3%;
+    padding: 0 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.management-item .subject{
+    width: 190px;   
+    height: 190px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: 26px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    align-content: center;
+}
+
+.management-info{
+    width: 414px;
+    margin-top: 29px;
+    padding-top: 27px;
+    font-size: 22px;
+    font-family: "Noto Sans KR", sans-serif;
+    letter-spacing: -0.25px;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.management-info::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 90%;
+    height: 2px;
+    background-color: #d70000;
+    transform: translateX(5%);
+}
+
+.main-management .main-btn-wrap .main-btn{
+    margin-top: 36px;
+}

@@ -1,0 +1,212 @@
+
+/**************************** popup ****************************/
+.popup{
+    position: fixed;
+    top: 60px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 580px;
+    height: 590px;
+    z-index: 12;
+    /* transition: width 0.3s ease;
+    transition: height 0.3s ease; */
+}
+
+.popup-hidden{
+    display: none;
+}
+
+
+.popup-top-wrap{
+    background: white;
+    padding: 8px 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.popup-img{
+    width: 580px;
+    height: 505px;
+    background-image: url("https://www.nongshim.com/resources2/images/common/img-popup.jpg");
+}
+
+.popup-bottom-wrap{
+    height: 40px;
+    background: black;
+    color: white;
+    padding-right: 16px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popup-bottom-wrap div{
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    font-size: 14px;
+}
+
+.stop-watching-for-today, .popup-close{
+    cursor: pointer;
+}
+
+.stop-watching-for-today img{
+    padding-right: 8px;
+}
+
+/**************************** unb ****************************/
+.category-unb{
+    position: fixed;
+    background-color: #F4F4F4;
+    width: 100vw;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+}
+
+.category-unb>div{
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+}
+
+.unb-lists{
+    display: flex;
+}
+
+.unb-lists li{
+    width: 168px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.unb-lists li a{
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    color: #999999;
+}
+
+/**************************** gnb ****************************/
+.category-gnb{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 58px 0 45px;
+    width: 100vw;
+    height: 80px;
+    position: fixed;
+    transform: translate(0, 45px);
+    z-index: 10;
+    /* transition: background-color 0.3s ease; */
+}
+
+.category-gnb ul{
+    display: flex;
+}
+
+.logo{
+    padding: 22px 20px 12px;
+}
+
+#logo-svg g{
+    fill: white;
+}
+
+.logo-fill {
+    fill: red; 
+}
+
+.logo-line {
+    fill: white; 
+}
+
+.gnb{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.gnb li{
+    display: flex;
+    align-items: center;
+}
+
+.gnb li a, .gnb-sub li i{
+    color: white;
+}
+
+.gnb li:nth-child(-n+6){
+    height: 80px;
+    padding: 28px 24px 24px 25px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    white-space: nowrap;
+}
+
+.gnb li:nth-child(7){
+    padding-top: 10px;
+}
+
+.gnb:hover ~ #logo-svg g{
+    fill: black;
+}
+
+.gnb:hover ~ .gnb-sub li a i{
+    color: black;
+}
+
+.gnb:hover li a{
+    color: black;
+}
+
+
+.nlive-svg{
+    width: 86px;
+    height: 33px;
+}
+
+.gnb-sub li{
+    height: 80px;
+}
+
+.gnb-sub li a i{
+    padding: 27px 15px 23px;
+    font-size: 20px;
+}
+
+/**************************** gnb dropdown menu ****************************/
+.dropdown-menu{
+    width: 100vw;
+    height: 0px;
+    background-color: white;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    transition: height 0.3s ease;
+    z-index: -1;
+}
+
+.dropdown-menu-container{
+    display: none;
+}
+
+.dropdown-menu-content{
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.gnb li:hover .dropdown-menu{
+    height: 400px;
+}
+
+.gnb li:hover .dropdown-menu-container{
+    display: block;
+    box-shadow: 0px -4px 4px -4px rgba(180, 180, 180, 0.493);
+}

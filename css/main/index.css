@@ -1,0 +1,72 @@
+
+
+/**************************** btn quick ****************************/
+.btn-quick{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    z-index: 2;
+    right: 50%;
+    margin-top: -25px;
+    margin-right: -25px;
+    background-color: #96c120;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btn-quick a i{
+    color: white;
+}
+
+/**************************** main common ****************************/
+
+main article>h2 {
+    font-size: 62px;
+    font-weight: 700;
+    text-align: center;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+.main-btn-wrap{
+    display: flex;
+    justify-content: center;
+}
+
+.main-btn{
+    width: 270px;
+    height: 60px;
+    padding: 18px 32px;
+    border-radius: 30px;
+    font-size: 17px;
+    background-color: transparent;
+    border: 1px solid #ca0202;
+    color: #ca0202;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 600;
+}
+
+.main-btn:hover{
+    color: white;
+    background-color: #ca0202;
+}
+
+
+
+/**************************** story ****************************/
+.main-story{
+    /* 임시 */
+    height: 1081px; 
+    width: 100%;
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 0 80px;
+    position: relative;
+}
+
+
+
+
